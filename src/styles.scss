@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('app/share/scss/them.scss');
+    
+:host::ng-deep{
+  
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+    background: var(--red-500);
+    border-color: #dee2e6;
+    color: #343a40;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+}

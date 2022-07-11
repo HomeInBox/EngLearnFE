@@ -1,0 +1,24 @@
+<div class="card">
+
+</div>
+
+<form [formGroup]='formLogin'>
+    <div class="col-12">
+        <p-card header="Login">
+            <div class="field grid">
+                <div class="col-3">
+                    <label for="username" class="block">Username</label>
+                    <input [style]="{'width':'100%'}" id="username" formControlName="UserName" type="username" aria-describedby="username-help" pInputText />
+
+                    <label for="password" class="block">Password</label>
+                    <input [style]="{'width':'100%'}" id="password" formControlName="Password" type="username" aria-describedby="password-help" pInputText />
+                </div>
+                <div class="col-3">
+                    <br>
+                    <button (click)="OnLogin()" pButton type="button"  icon="pi pi-unlock" iconPos="left"></button>
+                </div>
+            </div>
+        </p-card>
+    </div>
+</form>
+
